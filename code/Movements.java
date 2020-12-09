@@ -8,7 +8,7 @@ public class Movements
 {
 	
 	int zeroPos = 0;
-	public int[] possitions = new int[]{170, 195, 215, 245, 265, 290, 315, 336}; 
+	public int[] possitions = new int[]{160, 195, 230, 245, 265, 290, 315, 355}; 
 
 	
 	public Movements() {}

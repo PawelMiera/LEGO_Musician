@@ -1,61 +1,36 @@
-import lejos.pc.comm.*;//imports
-import javax.swing.*;
-import java.io.*;
-import java.awt.event.*;
-import java.awt.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Dictionary;
-import java.util.Hashtable;
-import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
-import java.util.Date;
+import java.awt.EventQueue;
 
 public class usb{
 	
-	JFrame frame;
-	JButton plus;// a lot of objects are created
-	JButton minus;
-	JButton next;
-	JButton escape;
-	JButton play;
-	JPanel buttonPanel;
-	JPanel buttonPanel1;
-	JButton C;
-	JButton D;
-	JButton E;
-	JButton F;
-	JButton G;
-	JButton A;
-	JButton H;
-	JButton C1;
-	int currentInd = 0;
-	public Movements mov;
 	
-	public usb()
+	public static void main(String[] args) 
 	{
-		mov = new Movements();
-	}
-	public static void main(String[] args) {
         System.out.println("Cymbaly");
-		usb usb = new usb();
+		
+		EventQueue.invokeLater(new Runnable() {
+			public void run() 
+			{
+				try 
+				{
+					okno window = new okno();
+				} 
+				catch (Exception e) 
+				{
+					e.printStackTrace();
+				}
+			}
+		});
 		
 		
-		SwingUtilities.invokeLater(new Runnable(){
+		
+		/*SwingUtilities.invokeLater(new Runnable(){
 		public void run(){
         usb.buildGUI();
 		
 		 }
-		});
-		
-		
-
-		//mov.makeSound();
-		
+		});*/
     }
-	
+	/*
 	public void buildGUI() //Simple GUI building
 	{
 		mov.calibrate();
@@ -316,7 +291,7 @@ public class usb{
 		 {
 				mov.playOneNode(7);
 		 }
-	 }
+	 }*/
 
 	
 }
